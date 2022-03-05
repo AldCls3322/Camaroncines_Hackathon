@@ -49,7 +49,7 @@
   --bs-info-rgb: 61, 15, 26;
   --bs-warning-rgb: 228, 198, 98;
   --bs-danger-rgb: 161, 100, 104;
-  --bs-light-rgb: 248, 249, 250;
+  --bs-light-rgb: 00, 00, 00;
   --bs-dark-rgb: 33, 37, 41;
   --bs-black-rgb: 0, 0, 0;
   --bs-white-rgb: 255, 255, 255;
@@ -11484,8 +11484,8 @@ body {
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
-  border: 1px solid #64a19d;
+  color: #5b1727;
+  border: 1px solid #5b1727;
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
@@ -11539,15 +11539,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #5b1727;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #5b1727;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #5b1727;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #5b1727;
   }
 }
 
@@ -11584,7 +11584,7 @@ body {
           background-clip: text;
 }
 .masthead h2, .masthead .h2 {
-  max-width: 20rem;
+  max-width: 60rem;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
@@ -11602,6 +11602,7 @@ body {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
+    
   }
   .masthead h2, .masthead .h2 {
     max-width: 30rem;

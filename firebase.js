@@ -26,5 +26,5 @@ const db = getFirestore();
 
 //promesa
 export const saveTask = (nombreDte, edadDte, trabajoDte, generoDte, estudioDte, emailDte, start, lugar, evento, nombreDdo, trabajoDdo) => {
-    addDoc(collection(db, 'denuncias'),{nombreDte, edadDte, trabajoDte, generoDte, estudioDte, emailDte, start, lugar, evento, nombreDdo, trabajoDdo})
+  addDoc(collection(db, 'denuncias'),{nombreDte, edadDte, trabajoDte, generoDte, estudioDte, emailDte, start, lugar, evento, nombreDdo, trabajoDdo})
 }

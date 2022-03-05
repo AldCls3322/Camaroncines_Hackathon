@@ -24,41 +24,60 @@
       
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <!-- Centrar elementos de Nav -->
             <div class="container px-4 px-lg-5">
-                
+                <!-- Boton para despelgar opciones / secciones del html -->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     
                     <i class="fas fa-bars"></i>
                 </button>
+              
+                <!-- SIDEBAR -->
+                <div id="mySidebar" class="sidebar">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <!-- Seccion twitter -->
+                  <section class="twitter-section" id="news">
+                    <div class="col-sm-12 text-center">
+                      <a class="twitter-timeline" data-width="500px" data-height="500px" href="https://twitter.com/MXvsCORRUPCION?ref_src=twsrc%5Etfw">Tweets by MXvsCORRUPCION</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                          
+                  </section>
+                </div>
+
+                <!-- Opciones del sidebar -->
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#inicio">¿Cómo denunciar?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#tipos">Tipos de corrupción</a></li>
                         <li class="nav-item"><a class="nav-link" href="#concepts">Conoce más</a></li>
-                        <li class="nav-item"><a class="nav-link" href="twiterfeo.html">Noticias <i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="glyphicon glyphicon-new-window"></span></a></li>
+                        <li class="nav-item"><a class="nav-link" onclick="openNav()">&#9776; Noticias</a></button> 
+                        <script>
+                          function openNav() {
+                            document.getElementById("mySidebar").style.width = "450px";
+                            document.getElementById("main").style.marginLeft = "450px";
+                          }
+                          
+                          function closeNav() {
+                            document.getElementById("mySidebar").style.width = "0";
+                            document.getElementById("main").style.marginLeft= "0";
+                          }
+                        </script>
+                        <!--<li class="nav-item"><a class="nav-link" href="twiterfeo.html">Noticias <i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="glyphicon glyphicon-new-window"></span></a></li>-->
                     </ul>
                 </div>
             </div>
         </nav>
-
-
-        <!-- <div>
-          <form id="task-form">
-            <input type="text" id="task-title" class="form-control" placeholder="Task Title">
-            <textarea id="task-description" rows="3" placeholder="Task Description"></textarea>
-            <button class="btn btn_primary" id="btn-task-form">Save</button>
-          </form>
-        </div> -->
-        <!-- <script type="module" src="./index.js"></script> -->
       
         <!-- Masthead-->
         <header class="masthead">
+            <!-- Titulo -->
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Denunciator</h1>
-                        <h2 class="text-white-50 mx-auto mt-2">Quedarse callado es lo mismo que no hablar</h2>
-                        <br></br><br></br><br></br><br></br><br></br>
+                        <br></br>
+                        <h2 class="text-white-50 mx-auto mt-2">En esta página podrás encontrar información sobre los tipos de corrupción y de denuncias que existen en nuestro país, y qué es lo que se considera como faltas administrativas. También podrás tener acceso a contactos donde podrás denunciar una falta administrativa de forma segura y efectiva.</h2>
+                        <br></br><br></br>
                         <section class="header-down-arrow">
                           <a href="#inicio">
                           <img src="assets/img/DownArrow.PNG" width="60">
@@ -72,7 +91,8 @@
         <!-- Inicio-->
         <section class="projects-section bg-light" id="inicio">
             <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
+              
+                <!-- Featured Project Row | Sin usar -->
                 <!--<div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
@@ -81,47 +101,66 @@
                         </div>
                     </div>
                 </div>-->
-                <!-- Project One Row-->
+              
+                <!-- Project One Row | Que debes hacer -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/bg-masthead.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Faltas administrativas</h4>
-                                    <p class="mb-0 text-white-50">Pepe pecas pica papas con un pico</p>
+                                    <h4 class="text-white"> ¿Qué debes hacer? </h4>
+                                    <ul class="ayuda">
+                                      <li class="mb-0 text-white-50">Identifica la forma en la que más te convenga denunciar (En persona, en línea, por telefono)</p>
+                                      <li class="mb-0 text-white-50">Salvaguarda tu integridad y la de las personas con las que te encuentres</p>
+                                      <li class="mb-0 text-white-50">Conoce los distintos tipos de corrupción que se pueden denunciar</p>
+                                      <li class="mb-0 text-white-50">Verifica los documentos que llegarás a necesistar para realizar las denuncias</p>
+                                    </ul>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+              
+                <!-- Project Two Row | Donde debes denunciar-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
                     <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">¿Dónde se presentan las denuncias?</h4>
-                                    <p class="mb-0 text-white-50">El plan es quitar el texto de aquí y dejar solo la imagen, pero simplemente se ve muy bonito.</p>
-                                    <br></br>
+                                    <p class="mb-0 text-white-50">Para empezar con tu denuncia, presiona el siguiente botón. Te pediremos datos específicos de tu caso y (opcionalmente) información personal:</p>
+                                    <br>
                                     <a class="btn btn-primary" href="forms.html">DENUNCIAR</a>
+                                    <br><br>
+                                    <ul class="ayuda">
+                                      <li class="mb-0 text-white-50">De otra manera, puedes contactar a</p>
+                                      <li class="mb-0 text-white-50">La Fiscalía General de manera anónima: 800-00-85-400</p>
+                                      <li class="mb-0 text-white-50">Empezar tu denuncia en el "Sistema Integral de Denuncias Ciudadanas": 01 800 11 28 700</p>
+                                    </ul>
+                                    
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project Three Row-->
+              
+                <!-- Project Three Row | Que sucedera -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
                     <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
+                        <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Faltas administrativas</h4>
-                                    <p class="mb-0 text-white-50">Pepe pecas pica papas con un pico</p>
+                                    <h4 class="text-white">¿Que sucederá?</h4>
+                                    <ul class="ayuda">
+                                      <li class="mb-0 text-white-50">Falta no grave: El asunto se juzga y sanciona por autoridades en la SFP</p>
+                                      <li class="mb-0 text-white-50">Falta grave: Se presenta el caso ante el TFJA</p>
+                                      <li class="mb-0 text-white-50">Delito: Se envía el caso a la Fiscalía Especializada en Combate a la Corrupción para seguir con un proceso penal</p>
+                                    </ul>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -148,6 +187,7 @@
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
+                    <!-- Actuación bajo conflicto de interés -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -159,6 +199,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Cohecho -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -170,6 +212,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Desvío de recursos públicos -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -181,7 +225,8 @@
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- Encubrimiento -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -194,6 +239,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Neopotismo -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -204,6 +251,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Soborno -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -216,7 +265,7 @@
                         </div>
                     </div>
                     
-
+                    <!-- Tráfico de influencias para inducir a la autoridad -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -229,6 +278,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Uso indebido de recursos públicos -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -242,6 +293,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Utilización indebida de información -->
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
@@ -313,9 +366,9 @@ la presunta responsabilidad.
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Los Camaroncines 2022</div>
             <br>
             <div class="social d-flex justify-content-center">
-                <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                <a class="mx-3" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="mx-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="mx-3" href="#!"><i class="fab fa-github"></i></a>
             </div></footer>
         
         <!-- Bootstrap core JS-->

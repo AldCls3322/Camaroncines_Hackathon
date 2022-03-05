@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Denunciator</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+      
+        <!-- Font Awesome icons -->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+      
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+      
+        <!-- Estilos CSS-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/estilos.css">
+    </head>
+    <body id="page-top">
+      
+        
+        <!-- Masthead-->
+        <header class="masthead2">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+
+      <head>
+      	<title> Denuncia </title>
+      </head>
+    
+    <body>
+    	<div class="formulario">
+      	<form action="/action_page.php" method="get" id="task-form">
+          <a  href="index.html"><button class="btnWhite" type="button">Regresar
+      		</button>
+      		</a>
+      		<br><br>
+      	  <p>¡Bienvenido! <br> Sabemos que realizar una denuncia puede ser complicado, por lo que te acompañaremos en cada paso del proceso </p>	
+      	  <p>Primero necesitamos conocerte un poco, háblanos de ti. Comprendemos que quieras cuidar tu privacidad, por lo que solamente las preguntas que tienen * son obligatorias</p>
+      	
+        	<label for="dtename">¿Cuál es tu nombre?</label>
+        	<input type="text" name="dtenombre" id="dtename" placeholder="Ej. Juan Ignacio Martínez De la Rosa" ><br></br>
+          <label for="dteage">¿Cuántos años tienes?</label>
+        	<input type="text" name="dteedad" id="dteage" placeholder="Ej. 19"><br></br>
+        
+        	<label for="dtejob">¿A qué te dedicas?</label>
+        	<input type="text" name="dtetrabajo" id="dtejob" placeholder="Ej. Obrero en planta"><br></br>
+      
+      	  <label> Me identifico más con:</label>
+      		<select name="genero" id="genero">
+      			<option value="default">- Selecciona una opción -</option>
+      			<option value="female">Mujer</option>
+            <option value="male">Hombre</option>
+      			<option value="other">Otro</option>
+            <option value="noanswer">Prefiero no responder</option>
+      		</select>
+      		<br></br>
+      
+      	  <label> Mi máximo grado de estudios es:</label>
+      		<select name="estudios" id="estudios">
+      			<option value="default">- Selecciona una opción -</option>
+      			<option value="nostudies">No tengo estudios</option>
+      			<option value="preescolar">Preescolar</option>
+      			<option value="primaria">Primaria</option>
+      			<option value="secundaria">Secundaria</option>
+      			<option value="preparatoria">Preparatorio</option>
+      			<option value="universidad">Universidad</option>
+      			<option value="posgrado">Posgrado</option>
+      		</select>
+      		<br></br>
+      	
+        	<label for="email">Ingresa tu correo:</label>
+        	<input type="email" id="email" name="email" placeholder="Ej. usuario@correo.com">
+      		<br></br>
+      	
+          <br><br>
+        	<p> 
+        		Platícanos un poco más acerca de lo sucedido <br>	
+        		<label for="start">¿Cuándo sucedió el evento a denunciar? <strong>*</strong></label>
+        		<input type="date" id="start" name="trip-start"
+        			value="2018-07-22"
+        			min="2002-03-06" max="2022-03-06" required style="text-align:left;">
+        		<br></br>
+        
+        		<label for="Comment">¿Dónde se dio el suceso? <strong>*</strong> (Localidad, Ciudad, Estado)</label><br>
+        		<textarea name="comentario" id="lugar" required></textarea>
+        		<br></br>
+        		<label for="Comment">¿Qué fue lo que pasó? <strong>*</strong> Incluye todos los detalles que consideres relevantes</label><br>
+        		<textarea name="comentario" id="evento" required></textarea>
+        		<br></br>
+        		En caso de tener algún archivo que evidencie lo sucedido puedes agregarlo aquí: <br>
+        		<input type="file" name="archivosubido">
+        	</p>
+          <br></br>
+        	<p>
+        		Por último, necesitamos más información de la persona a denunciar, en caso de que la conozcas.
+        		<br></br>
+        		
+        		<label for="ddoname">Nombre del denunciado: </label>
+        		<input type="text" name="ddonombre" id="ddoname">
+        		<br></br>
+      
+        		<label for="ddojob">Oficio del denunciado: </label>
+        		<input type="text" name="ddotrabajo" id="ddojob"><br>
+          	</p>
+        	  <br></br>
+            <p><strong>Aviso de Privacidad Integral de gob.mx</strong></p>
+          <textarea name="avisop" id="avisop" rows=7 readonly>
+La Coordinación de Estrategia Digital Nacional de la Oficina de la Presidencia de la República con domicilio en avenida Constituyentes, número 161, piso 4, colonia San Miguel Chapultepec II sección, demarcación territorial Miguel Hidalgo, México, código postal 11850, en la Ciudad de México, es el sujeto obligado y responsable del tratamiento de los datos personales que se recaban de forma general a través de gob.mx, los cuales serán protegidos conforme a lo dispuesto por la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados, y demás normatividad que resulte aplicable; dichos datos son los listados en el apartado siguiente. Los datos personales recolectados por las dependencias y entidades de la Administración Pública Federal, y empresas productivas del Estado, los cuales consolidan los sitios, micrositios y redes sociales a través de los portales institucionales alojados dentros de gob.mx, o aquellos datos recabados por cualquier otro sujeto obligado que utilice gob.mx para la prestación de algún servicio digital, serán tratados bajo su responsabilidad, conforme a sus atribuciones legales y el aviso de privacidad correspondiente.
+
+Datos personales que se recolectan en gob.mx y la finalidad del tratamiento
+El único dato personal que se recaba a través de gob.mx, es: correo electrónico. Gob.mx no está condicionado a proporcionar el correo electrónico, este dato personal se recopila como dato opcional, para que el usuario reciba mayor y mejor información. Se informa que no se recabarán datos personales sensibles. Serán utilizados para las siguiente finalidades: Única: hacer llegar el boletín de gob.mx.
+Uso de Cookies
+Gob.mx utiliza cookies para ayudar a obtener información que nos permite mejorar la experiencia de usuario y brindar un mejor servicio. En cualquier momento, dichas cookies pueden ser eliminadas accediendo a las preferencias de configuración del navegador en uso.
+Fundamento legal para llevar a cabo el tratamiento
+La Coordinación de Estrategia Digital Nacional de la Oficina de la Presidencia de la República trata los datos personales antes señalados con fundamento en los artículos 6° Base A y 16 segundo párrafo de la Constitución Política de los Estados Unidos Mexicanos; 3°, fracción XXXIII, 4°, 16, 17 y 18 de la Ley General de Protección de Datos Personales en Posesión de Sujetos Obligados; 1° y 8º, fracción I, y transitorios Segundo y Décimo Tercero de la Ley Orgánica de la Administración Pública Federal; Primero, Tercero y Décimo Tercero del Decreto por el que se establece la Ventanilla Única Nacional para los Trámites e Información del Gobierno; las disposiciones Tercera, Cuarta, fracciones I y II, y Décimo Sexta de las Disposiciones Generales para la implementación, operación y funcionamiento de la Ventanilla Única Nacional; y los artículos 2, fracción VI; 3, fracción IX y 36, fracciones III y XVII del Reglamento de la Oficina de la Presidencia de la República.
+Mecanismo para ejercer sus derechos de acceso, rectificación, cancelación u oposición de sus datos personales (ARCO)
+El titular de los datos podrá ejercer sus derechos ARCO personalmente ante la oficina de la Coordinación de Estrategia Digital Nacional de la Oficina de la Presidencia de la República, ubicada en avenida Constituyentes, número 161, piso 4, colonia San Miguel Chapultepec II sección, demarcación territorial Miguel Hidalgo, México, código postal 11850, en la Ciudad de México, o bien, a través de la Plataforma Nacional de Transparencia en http://www.plataformadetransparencia.org.mx
+Transferencia de datos personales
+No se realizarán transferencias de datos personales, salvo aquéllas que sean necesarias para atender requerimientos debidamente fundados y motivados, provenientes de una autoridad competente.
+Cambios al aviso de privacidad
+En caso de que existir una modificación a este aviso de privacidad, se notificará a través del propio portal https://www.gob.mx/privacidadintegral
+        		</textarea>
+        <br></br>
+        <div class="row">
+          <div class="col-lg-1">
+            <input type="checkbox" id="cbox1" value="checkbox" required><br>
+          </div>
+          
+          <div class="col-lg-4">
+            <label> He leído y acepto el aviso de privacidad</label>
+
+            
+          </div>
+          
+        </div>
+          <br></br>
+          <button class="btn btn_primary" id="btn-task-form">Da click para mandar denuncia</button>
+
+          
+      	  <!-- <button type="submit">Da click para continuar</button> -->
+          
+        </form>
+    	</div>
+      <script type="module" src="./index.js"></script>
+    </body>
+</html>
+
+                

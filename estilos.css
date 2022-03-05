@@ -1,0 +1,111 @@
+.manos
+{
+    height: 466px;
+    width: 787px;
+}
+
+.twitter-timeline
+{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.formulario
+{
+    
+    background-color: white;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+.regresar
+{
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 110px;
+    height: 40px;
+    border-color: rgb(245, 4, 4);
+    border-radius: 15px;
+    background-color: blue;
+    border: 15px;
+}
+
+.btnWhite {
+    width: 164px;
+    height: 40px;
+    border-radius: 4px;
+    border: solid 1px #64a19d;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #64a19d;
+    outline: none;
+}
+
+.masthead2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(../assets/img/bg-masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+input {
+  width: 100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-down-arrow img {
+  animation: fade-slide-up 1s 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: .8;
+    transform: scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-down-arrow img {
+  animation: fade-slide-up 1s 1s ease-out forwards,
+             pulse 2s 3s ease-out infinite;
+  opacity: 0;
+}
